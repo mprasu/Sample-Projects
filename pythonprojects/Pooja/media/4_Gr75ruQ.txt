@@ -1,0 +1,18 @@
+1. Write a JavaScript function which accepts a number 'n' and an array and returns the first 'n' elements of the array. Display the output on the web page.
+Eg: if n =3 and array is [0,10,3,4,5,7]
+    Expected output is [0,10,3]
+
+2. Write a JavaScript function which accepts an array and returns the last element of the array. Display the output on the web page.
+Eg: if [0,10,3,4,5,7] is the array
+    Expected output is 7.
+
+3. Write a JavaScript function which accepts a number which represents an angle and reeturns the type of a given angle. Display the same on the web page.
+Types of angles:
+Acute angle: An angle between 0 and 90 degrees.
+Right angle: An 90 degree angle.
+Obtuse angle: An angle between 90 and 180 degrees.
+Straight angle: A 180 degree angle. 
+
+4. Write a JavaScript function which accepts a number n and returns the sum n + n/2 + n/4 + n/8 where n is a positive integer. Display the result on the web page.
+Eg: if n=8
+The result should be 15.

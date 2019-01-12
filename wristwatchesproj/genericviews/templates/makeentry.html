@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Entry</title>
+</head>
+<body>
+ 
+    <form action="{% url 'makeentry' %}" method="post"><!-- /genericviews/makeentry -->
+    {% csrf_token %}
+   {{ form }}
+    <input type="submit" value="Submit">
+    </form><br>
+ <a href="{% url 'index'  %}">click here to get products</a>
+ 
+</body>
+</html>

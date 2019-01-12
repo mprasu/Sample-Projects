@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function emailValidation(){
+	var emailTextBox=document.getElementById('emailField');
+	var email=emailTextBox.value;
+	var emailId=document.getElementById('emailId')
+	var emailRegEx=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	
+
+	if (emailRegEx.test(email)){
+		emailId.textContent="valid"
+		emailId.style.color="green";
+	}
+	else{
+		emailId.textContent="not valid"
+		emailId.style.color="red";
+	}
+}
+
+
+</script>
+<body>
+<form name="f1" action="">
+	<div>
+		<label>Email_id :</label>
+		<input type="text" id='emailField' name="a3" onblur='emailValidation()' />
+	</div>
+	<div >
+		<div id="emailId"></div>
+	</div>
+</form>
+</body>
+</head>
+</html>

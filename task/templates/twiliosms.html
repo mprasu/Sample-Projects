@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="col-lg-7 m-auto d-block">
+			<h1>click to send message</h1>
+
+			<form method="POST" action="#"class="form-horizontal">
+				{% csrf_token %}
+				<img src="{% static 'images/mail.jpg' %}" alt="logo">
+				<input type="submit" name="submit" value="submit" class="btn btn-success">
+			</form>
+		</div>
+	</div>
+	
+
+</body>
+</html>

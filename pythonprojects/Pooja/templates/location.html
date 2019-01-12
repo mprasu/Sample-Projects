@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="col-lg-8 m-auto d-block">
+			<form method="post">{% csrf_token %}
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" name="name" class="form-control" placeholder="Search by name ">
+				</div>
+				<div class="form-group">
+					<label>Location</label>
+					<input type="text" name="loc" class="form-control" placeholder="Search by Location">
+				</div>
+				<button type="submit">Search</button>
+				<div>
+				<div>
+					Search with alphabets <a href="contact">Click here</a>
+				</div>	
+					{% if msg %}
+					<ul class="messages">
+						<li style="color:red">{{ msg }}</li>
+					</ul>
+					{% endif %}
+				</div><br>
+				{% if sr %}
+				{% for k in sr %}
+				<table border="0px" width="300px">
+					<tr class="{% cycle 'odd' 'even' %}">
+						<td>Name</td>
+						<td>{{ k.Name }}</td>
+					</tr>
+					<td>
+						<tr>
+							<a href="viewdetails/?query={{k.Location}},{{k.Name}}">viewdetails</a>
+						</tr>
+					</td>
+
+				</table>
+
+				<hr>
+				{{msg}}
+				{% endfor %}
+				{% endif %}	
+			</form>
+		</div>
+	</div>
+</body>
+</html

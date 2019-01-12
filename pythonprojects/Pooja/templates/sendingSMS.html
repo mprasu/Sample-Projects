@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="POST" class="form-horizontal" action="#">
+		{% csrf_token %}
+		your : <input type="number" name="yournumber">
+		yourpassword : <input type="password" name="yourpassword">
+		PhoneNumber : <input type="number" name="phonenumber">
+		Message : <input type="textarea" name="message">
+	</form>
+	<button>submit</button>
+
+</body>
+</html>

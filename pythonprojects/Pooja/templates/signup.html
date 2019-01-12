@@ -1,0 +1,86 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.mybody{
+			background-color: rgb(211,211,211);
+		}
+	</style>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+<body class="mybody">
+	<div class="container">
+		<div class="col-lg-7 m-auto d-block">
+			<h1>Sign Up Here</h1>
+			<form method="POST" action="#"class="form-horizontal" enctype="multipart/form-data" >{% csrf_token %}
+				<div class="form-group">
+					<label>Name :</label>
+					<input type="text" name="a1" class="form-control" onblur='nameValidation(this)'>
+					<div id='textField'></div>
+				</div>
+				<div class="form-group">
+					<label>Age :</label>
+					<input type="text" name="a2" class="form-control" onblur='ageValidation(this)'>
+					<div id='ageField'></div>
+				</div>
+				<div class="form-group">
+					<label>Email_id :</label>
+					<input type="text" id='emailField' name="a3" class="form-control" onkeyup='emailValidation()' />
+				</div>
+				<div class="form-group">
+					{{emailexist}}
+					<div id="emailId"></div>
+				</div>
+			<div class="form-group">
+					<label>Password :</label>
+					<input type="password" id='passwordField' name="a4" class="form-control" onkeyup='validatePassword()' />
+					<div id="passwordId"></div>
+				</div>
+				<div class="form-group">
+					<label>ConfirmPassword :</label>
+					<input type="password" id='confirmPasswordField' name="a5" class="form-control"  onblur='confirmPasswordValidate(this)' />
+					<div id="confirmPasswordId"></div>
+				</div>
+				<div class="form-group">
+					<label>Phonenumber :</label>
+					<input type="number" min="0" step="1" name="a6" class="form-control" id="Phonenumber" onblur="phonenumberValidate()">
+					<div id="PhonenumberId"></div>
+				</div>
+				<div class="form-group">
+					<label>Location :</label>
+					<input type="text" name="a7" class="form-control" id="Location" onblur="locationValidate(this)">
+					<div id="LocationId"></div>
+				</div>
+				<div class="form-group">
+					<label>State :</label>
+					<input type="text" name="a8" class="form-control" id="State" onblur="stateValidate(this)">
+					<div id="stateId"></div>
+				</div>
+				<div class="form-group">
+					<label>Country :</label>
+					<input type="text" name="a9" class="form-control" id="Country" onblur="countryValidate(this)">
+					<div id=countryId></div>
+				</div>
+				<div class="form-group">
+					<label>Address :</label>
+					<input type="text" name="a10" class="form-control" id="Address" onblur="addressValidate(this)">
+					<div id=addressId></div>
+				</div>
+				<div class="form-group">
+					<input type="file" name="myfile" id="btnid">
+				</div>
+				<div>
+					<input type="submit" name="submit" value="submit" class="btn btn-success">
+				</div>
+			</form>
+		</div>
+	</div>
+	<script  src={% static 'js/signup.js' %} type="text/javascript">
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+#myid{
+		background-color:yellow;
+		margin-top: 10px;
+		float:right;  
+	}
+	#myid1{
+		background-color:pink;
+		margin-top: 10px;
+		float:right;  
+	}
+	.keycolor{
+		color:orange;
+	}
+	#title{
+		color:blue;
+	}
+	.topspacing{
+		padding-top: 40px;
+	}
+	#id3{
+		float: right;
+		background-color: orange;
+	}
+	#id4{
+		float: right;
+		
+	}
+

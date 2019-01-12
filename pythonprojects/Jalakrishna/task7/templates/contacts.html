@@ -1,0 +1,13 @@
+<html>
+<body>
+<table>
+ <tbody>
+ {% for query in range %}
+  <tr>
+  <a href="http://localhost:8000/filter/?query_nn={{query}}">{{ query}}/</a>
+  </tr>
+ {% endfor %}
+ </tbody>
+</table>
+</body>
+</html>

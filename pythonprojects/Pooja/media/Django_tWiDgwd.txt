@@ -1,0 +1,149 @@
+https://connect2india.com/COGNIER-INSIGHTS-PRIVATE-LIMITED/5204664
+Bhukya
+rehlat
+8448594150(head hoconss)
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<form class="form-horizontal" action=" " method="POST">
+			{% csrf_token %}
+
+		<h1><center>This your login page</center></h1>
+		</form>
+
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Django Interview Questions
+Introduction To Django Interview Questions And Answer
+Django is a free, open source web framework written in the Python programming language and used by millions of programmers every year. Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Its popularity is due to its friendliness to both beginners and advanced programmers. Django makes it easier to build better web apps quickly and with less code. Django is robust enough to be used by the largest websites in the world. Django was designed to handle two challenges: the intensive deadlines of a newsroom and the stringent requirements of the experienced Web developers
+
+Preparing for a job interview in Django. I am sure you want to know the most common Django Interview Questions and answers that will help you crack the Django Interview with ease. Below is the list of top  Django Interview Questions and answers at your rescue.
+
+Some of the most important Django Interview Questions that are frequently asked in an interview are as follows:
+
+1.How will you define Django programming Language?
+Answer:
+Django is a web framework in python to develop a web application in python. Django is a free and open source web application framework, written in Python. Django makes easier to build better web applications quickly and with less code.
+
+2.Can you explain different features of Django programming Language?
+Answer:
+Below is the list of features offered by Django:
+•A free, rich API
+•Automatic database table creation
+•Admin Interface
+•Tempting
+•Form Handling
+•A dynamic admin interface generator
+•A syndication feed framework
+•A powerful cache framework for dynamic websites
+•A powerful built-in template system
+•Easy database migrations
+•Security features
+•Other helpful add-ons
+•Internationalization
+•Object Relational Mapping
+•Testing Framework
+•Session, user management, role-based permission
+•Elegant URL design
+•Cache System
+
+3.Explain the architecture of Django?
+Answer:
+Django architecture consists of:
+Models: It describes your database schema and your data structure
+Views: It controls what a user sees, the view retrieves data from appropriate models and execute any calculation made to the data and pass it to the template
+Templates: It determines how the user sees it. It describes how the data received from the views should be changed or formatted for display on the page
+Controller: It is the heart of the system. It handles request and responses, setting up database connections and loading add-ons and specifies Django framework and URL parsing.
+
+4.Why should Django be used for web development?
+Answer:
+Django should be used for web development because of following reasons:
+•It allows dividing code module into logical groups to make it flexible to change.
+•To easy the website administration, it provides auto-generated web admin module.
+•It provides pre-packaged API for common user tasks.
+•It enables to define what should be URL for given function.
+•It enables to separate business logic from the HTML.
+•Everything is written in Python programming language.
+•It gives you template system to define HTML template for your web page to avoid code duplication
+
+5.Can you explain the working philosophy of Django?
+Answer:
+Django can be broken into many components:
+Models.py file: This file defines your data model by extending your single line of code into full database tables and add a pre-built administration section to manage content.
+Urls.py file: It uses a regular expression to capture URL patterns for processing.
+Views.py file: It is the main part of Django. The actual processing happens in view.
+When a visitor lands on Django page:
+1.Django checks the various URLs pattern you have created and uses the information to retrieve the view.
+2.The view processes the request, querying your database if necessary
+3.The view passes the requested information on to your template.
+4.The template renders the data in a layout you have created and displays the page.
+
+6.What are the inheritance properties in Django?
+Answer:
+There is three possible inheritance in Django:
+1.Abstract base classes: This style is used when you only want parent’s class to hold information that you don’t want to type out for each child model.
+2.Multi-table Inheritance: This style is used if you are sub-classing an existing model and need each model to have its own database table.
+3.Proxy models: This style is used, if you only want to modify the Python level behavior of the model, without changing the model’s fields.
+
+7.How can you setup Database in Django?
+Answer:
+To set up a database in Django, you can use the command edit my site/ setting.py, it is a normal python module with module level representing Django settings.
+Django uses SQLite database by default. It is easy for Django users because it doesn’t require any other type of installation. In the case of other databases, you have the following keys in the DATABASE ‘default’ item to match your database connection settings.
+Engines: you can change database by using ‘django.db.backends.sqlite3’ , ‘django.db.backeneds.mysql’, ‘django.db.backends.postgresql_psycopg2’, ‘django.db.backends.oracle’
+Name: The name of your database. In the case if you are using SQLite as your database, in that case, a database will be a file on your computer, Name should be a full absolute path, including the file name of that file.
+You can add setting likes setting like Password, Host, User, etc. in your database, if you are not choosing SQLite as your database.
+
+8.How can you set up static files in Django?
+Answer:
+There are three main things required to set up static files in Django:
+•Set STATIC_ROOT in settings.py
+•run manage.py collect static
+•set up a Static Files entry on the PythonAnywhere web tab
+
+9.What is the use of session framework in Django?
+Answer:
+The session framework facilitates you to store and retrieve arbitrary data on a per-site visitor basis. It stores data on the server side and abstracts the receiving and sending of cookies. A session can be implemented through a piece of middleware.
+
+10.What is the usage of middlewares in Django?
+Answer:
+Below are the usage of middlewares in Django:
+•Session management
+•Cross-site request forgery protection
+•Use authentication
+•Content Gzipping
+
+11.What are the roles of receiver and sender in signals?
+Answer:
+The roles of receiver and sender in signals are:
+Receiver: It specifies the callback function which will be connected to the signal.
+Sender: It specifies a particular sender to receive a signal from.
+
+12.What does Django templates contain?
+Answer:
+Django template is a simple text file. It can create any text-based format like XML, CSV, HTML, etc. A template contains variables that get replaced with values when the template is evaluated and tags (%tag%) that control the logic of the template

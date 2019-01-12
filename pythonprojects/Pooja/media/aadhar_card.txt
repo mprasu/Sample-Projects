@@ -1,0 +1,229 @@
+satya.gagan.n@gmail.com
+freecodecamp.org(front ennd excercise)
+ASCII VALUES in note pad alt+77=M
+Ashu@1994-->eduforcareer password
+fhjcx03780--> dlink password
+EFC093--> login id and password
+https://media.readthedocs.org/pdf/django-payments/latest/django-payments.pdf
+markaria.com trademark search
+Patent searching: https://wipo-analytics.github.io/databases.html
+http://www.django-rest-framework.org/
+http://www.django-rest-framework.org/api-guide/generic-views/
+https://www.youtube.com/watch?v=sD-Bi9QyoH0&list=PLDlfryoEyB-MMiHY_1xT7_vAYtyfOBfJy&index
+
+https://www.youtube.com/watch?v=axRCBgbOJp8&index=1&list=PLJtp8Jm8EDzjgVg9vVyIUMoGyqtegj7FH(google maps using rest api)
+
+https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/
+api key---(AIzaSyBgDcUPBWGuHEPyR3HUFzudIl2kP12cr8M)
+http://django-dynamic-scraper.readthedocs.io/en/latest/getting_started.html(web crawling with django)
+
+
+https://github.com/manosim/django-rest-framework-api-key
+
+
+'-zi(5hgmx&+233t3vj*%$_j(=g&&3880###6avbxow7vg2kbo3'
+today i worked onhttps://www.youtube.com/watch?v=nJ_3DcxRVCI&t=85s(prior art search) 
+
+12-06-2018
+These are the tasks you need to cover
+
+django-filters
+tempalte tags
+loclization and internalization(https://www.youtube.com/watch?v=Wa0VfS2q94Y)
+http://www.marinamele.com/taskbuster-django-tutorial/internationalization-localization-languages-time-zones
+security(hosting,SSL Certificate,wsgi middleware)
+configuring settings.py in django for deployment
+
+2.1.10 Learning Python Strings
+2.1.11 Sequence or Collections in PYTHON
+2.1.12 Python Lists
+2.1.13 Python TUPLE
+2.1.14 Python Sets
+2.1.15 Python Dictionary
+https://scotch.io/tutorials/build-your-first-python-and-django-application(python/django course)
+1.class based views
+
+
+1.1 templateview
+
+1,2 view
+
+1.3 list view
+1.4 detail view
+https://docs.djangoproject.com/en/2.0/topics/class-based-views/
+
+
+
+
+
+django-filters
+tempalte tags
+loclization and internalization
+security(hosting,SSL Certificate,wsgi middleware)
+configuring settings.py in django for deployment
+django by Max Goodridge
+
+SSL for free(https://www.youtube.com/watch?v=_Ijww1v3n9M)
+link for deployement(https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment)
+deployement heroku(https://www.youtube.com/watch?v=2kvTsCskJA0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Women empowerment means empowering women with all their rights they should have in the family, 
+society, school, college and country just like a man.
+ It is to make them able so that they can make own independent decisions for their personal development.
+ The status of women in the Indian society is still backward because of the gender inequality.
+ Women also should be given equal rights like men to really empower them. 
+They should not be treated as weak gender of the society as they occupy almost half population of the
+ country so they are half strength of the country.
+ Women have more patience and effort; they can better develop their country.
+ It loses the confidence level of women to actively come out of their homes and participate fearlessly in all 
+the activities like a man. Some of the crimes against women in India are rape, sexual harassment, 
+kidnapping and abduction, dowry death,torture,importation of girls, etc. 
+Such crimes inhibit the women empowerment to spread its wings and empower women.
+
+
+https://codeburst.io/building-an-api-with-django-rest-framework-and-class-based-views-75b369b30396
+
+4452 7287 1879
+
+
+
+
+my favourite movie is "3-IDIOTS" because this movie is based on the life of the Engineering studentd
+...Amir khan played an fantastic student role in this movie...
+this movie is ever green movie as it has given a good message to all the parents as well as to students..
+the message is that a parents should not force their child to becum what they wanted ...
+many of the parents wants there child to becum an engineer or an doctor but our parents never ask us 
+wat we wanted to becum in our lyf...a student will forcibly pushed into enginerring by their parents
+ later he will b nt able to perfrom well during his semister as he dont hve interest in this feild...
+so the parents ll b scolding,cursing hm due to his bad performance in xams...
+only parents are responsible for this...so parents should left upto der child wat he wanted to becum...
+and also this movie has given one more great messge to all students dat muggaping the answer ll never 
+give u the concept or knwledge. u need to understnd the concept of the answer
+ even if u are learning a small defination also...
+
+
+
+https://www.geeksforgeeks.org/arrays-in-java/
+
+
+Childrens under 14 years working as a labour are considered as Child labour. child labour has been an international concern because it
+damages,spoils and destroys the future of children.children are the hope and future of a nation, yet there are many children in our country 
+who never known a normal, carefree childhood, child labour is frequently utilized in india in various places small scale industry,retaurant etc, 
+ CAUSES OF CHILD LABOUR
+ To increase the income of a poor family. An increase in employement opportunity for adults would help in overcomming the problem 
+of poverty and child labour.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Wow..! My college days are unforgettable and in fact
+those days are happy days in may life. Every student hasthose days in their life's as well.I enjoyed myself a lot
+when i was in Jr.College. I have learned a lot from my professors. When ever i was wrong they corrected me. They used to be very friendly with us. We used to have
+competitions. No matter whether we win the competition or not, but they used to tell us participation is very
+important. They were very supportive and encouraged us in all things to grow up in our life's. We used to crack jokes
+on others. We used to comment on others. We used to bunk the class.
+ we used to jump the walls for second show movies. If we caught by sir's we led to punish. In fact I experienced.
+So, college life is so beautiful, no body can forget those
+days in their life's and those days will never be back again.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Facebook is an one of the social networking services which is expanded vastly through out the world with in less span of time.
+Facebook website was officially and originally launched by Mark Zuckerberg along with his college
+ (Harvard college, located in Cambridge, United States) room mates and fellow students. 
+Eventhough the facebook is popular and received a great response from all the people through out the world, 
+it has many disadvantages along with the advantages.
+Facebook is absolutely free and the people who are having more than 13 years age can register in facebook and access their profile.
+
+It is the best medium for the communciation, we can send messeges, video calling, uploading photos and videos, 
+updating status all these are available at free of cost. It connects the different people from any where in the world.
+
+The first and the biggest disadvantage of facebook is that it addctive or anyone can become addictive easily.
+ Once we get connected with facebook friends we can relize that how much time we are wasting/spending on facebook,
+ by cchating, seeing the other pictures, videos, commenting & liking the pictures of others,etc....
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+One who understands the importance of time, gives importance to time as well. Time runs continuously. Time does not come back.
+Time can't be stored or put by for later use. The best we can do is use time constructively. It is the only thing in the world that we 
+cannot store for future. So in conclusion it can be said that anyone who wishes to be great in life must learn to use time greatly.
+ Don’t let the precious moments just slip by in idle gossips and trivial activities. Make the best use of time 
+How do you manage time?
+complete most imoprtant tasks first.. Sleep at least 7-8 hours.. Get an early start..Turn key task into habits

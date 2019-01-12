@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2 style="color: blue">Data retrieved from database</h2>
+{#<table bgcolor="gray">#}
+<table border=""
+		width="1100"
+
+		align="center"
+		cellpadding="4"
+		cellspacing="2">
+    <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Company</th>
+        <th>EmailAddress</th>
+        <th>Service</th>
+        <th>PhoneNumber</th>
+        <th>Notes</th>
+    </tr>
+        {% for rec in records %}
+    <tr>
+        <td>{{ rec.Name }}</td>
+        <td>{{ rec.Designation }}</td>
+        <td>{{ rec.Company }}</td>
+        <td>{{ rec.EmailAddress }}</td>
+        <td>{{ rec.Service }}</td>
+        <td>{{ rec.PhoneNumber }}</td>
+        <td>{{ rec.Notes }}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<a href="./getaquote"><input type="button" align="center" value="Add New Data" ></a>
+</body>
+</html>

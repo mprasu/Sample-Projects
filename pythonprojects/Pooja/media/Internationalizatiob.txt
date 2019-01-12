@@ -1,0 +1,40 @@
+The reason why we are uusing this is we have tones of informaton were we cannot be show what actually a user will see
+internationalization is about marking  strings for translation
+
+django views
+-----------------
+
+from django.utils.translation import gettext
+def home(request):
+	context={"page_title":gettext("About Us"),
+	}
+	return render(request, ''home.html", context) 
+
+Translations
+django models
+------------------
+
+class Revision(models.Model):
+	language=models.CharField(max_length=7, default=settings.LANGUAGE_CODE,choices=settings.LANGUAGES)
+
+localization--> date formating, currency formatting between countries
+dango settings
+
+USE_L10N=True
+
+Translation catalogs
+--ability to merge catalogs
+--visualize which strings require translation
+-------------
+ Difference between internationalization and localization
+Internationalization(118N):-It is a process of preparing your application to handle multiple languages
+localization(L10N):- it is a process of were adding a perticular language of your locale file to your application 
+---------
+python 118N with gettext
+->gettext provides the baseline for all internationalization in python
+->Requires the GNU gettext package on all your server machines
+using gettext method
+->simply import the below statement
+	from django-utils.translation import ugettext, ungettext
+(ugettext --> supports unicode strings)
+

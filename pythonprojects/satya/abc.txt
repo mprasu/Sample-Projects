@@ -1,0 +1,11 @@
+Python is processed at runtime by the interpreter.
+You do not need to compile your program before executing it. 
+When you execute a program, Python first compiles your source
+code (the statements in your file) into a format known  as byte code.
+Compilation is simply a translation step, and byte code is a lower-level,
+platform-independent representation of your source code. Byte code can
+be run much more quickly than the original source code statements in your text 
+file. Byte code will be stored in a file with .pyc. Upto puthon 2.x this file 
+created in the same directory in with the source file is compiled.
+From python3.x this file is created in  __pychache__ folder 
+in with the source file is compiled.

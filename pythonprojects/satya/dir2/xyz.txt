@@ -1,0 +1,6 @@
+Python is a general-purpose interpreted, interactive, object-oriented, and high-level
+programming language. It was created by Guido van Rossum during 1985 – 1990.
+it is implemented based on diffrent language features like c,c++,java,shell script,perl.
+Python 3.0 was released in 2008 .
+note: most of the people are calling python is a scripting language because the way of developing python applications and execution of python applications are similar to the scripting languages
+all scripting languages are interpreted languages. Scripting is used automate  tasks (like shell scrpting).

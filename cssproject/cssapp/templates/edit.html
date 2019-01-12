@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block pagecontent %}
+ <section class="footer-contact-area section_padding_100 clearfix" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Form Start-->
+                    <div class="contact_from">
+                        <form action="update/{{members.id}}" method="POST">
+                            {% csrf_token %}
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="firstname" value="{{members.firstname}}" id="name" placeholder="First Name" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="lastname" id="name" value="{{members.lastname}}" placeholder="Last Name" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="mailid" id="email" value="{{members.mailid}}" placeholder="Your E-mail" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+ 
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Update</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}

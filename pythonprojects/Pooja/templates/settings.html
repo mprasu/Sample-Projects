@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<style type="text/css">
+		#id1{
+			float: right;
+			background-color: skyblue;
+		}
+		#id2{
+			float: right;
+			background-color: yellow;
+		}
+		#id3{
+			float: right;
+			background-color: pink;
+		}
+		#id4{
+			float:left;
+			background-color: rgb(0, 255, 255)
+; 
+		}
+		.class1{
+			padding-top: 50px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<form class="form-horizontal" action=" " method="POST">
+			{% csrf_token %}
+			<h4>Settings page</h4>
+			<div class="class1">
+				<div class="col-md-3" id="id1">
+					<a href='changepassword'>changepassword</a>
+				</div>
+				<div class="col-md-3" id="id3">
+					<a href='deleteAccount'>deleteAccount</a>
+				</div>
+				<div class="col-md-3" id="id4">
+					<a href='home'>home</a>
+				</div>
+			</div>
+			
+
+		</form>
+	</div>
+
+</body>
+</html>

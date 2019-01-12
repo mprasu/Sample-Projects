@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contacts</h1>
+        <div class="col-lg-8 m-auto d-block">
+        
+    		<div class="form-group">
+            {% if chr %}
+				{% for match1 in chr %}
+					Name:<label>{{ match1.Name }}</label><br>
+                	Age:<label>{{ match1.Age}}</label><br>
+                	Email id:<label>{{ match1.Email_id }}</label><br>
+                	Phonenumber:<label>{{ match1.Phonenumber }}</label><br><br><br>
+             	{% endfor %}
+            {% else %}
+                <h3>sorry  no result found</h3>
+            {% endif %}
+            </div> 	
+        </div>
+    </div>            
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% for k in f %}
+			<table border="0px" width="300px">
+				<tr>
+					<td>Name</td>
+					<td>{{ k.Name }}</td>
+				</tr>
+				<tr>
+					<td>Location</td>
+					<td>{{ k.Location }}</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td>{{ k.Address }}</td>
+				</tr>
+				<tr>
+					<td>State</td>
+					<td>{{ k.State }}</td>
+				</tr>
+			</table>
+			<hr>
+			{% endfor %}
+
+</body>
+</html>

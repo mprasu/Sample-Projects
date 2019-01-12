@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<h1>Update Profile</h1>
+		<div class="col-lg-8 m-auto d-block">
+        {% for user in uname %}
+
+
+		<form method="POST" class="form-horizontal" action="" enctype="multipart/form-data" id="contact_form" onsubmit="return validation()">{% csrf_token %}
+			<div class="form-group">
+
+				<input type="hidden" name="name" value="{{ user.Name }}" class="form-control" id="Name">
+				<span id="Name1" class="text-danger font-weight-bold"></span>
+			</div>
+
+			<div class="form-group">
+				<label>Age :</label>
+				<input type="text" name="age" value="{{ user.Age }}" class="form-control" id="Age">
+				<span id="Age1" class="text-danger font-weight-bold"></span>
+
+			</div>
+			<div class="form-group">
+				<label>Email_id :</label>
+				<input type="text" name="email" value="{{ user.Email_id }}" class="form-control" id="Email_id">
+				<span id="Email_id1" class="text-danger font-weight-bold"></span>
+
+			<div class="form-group">
+				<label>Phonenumber :</label>
+				<input type="text" name="phonenumber" value="{{ user.Phonenumber }}" class="form-control" id="Phonenumber">
+				<span id="Phonenumber1" class="text-danger font-weight-bold"></span>
+
+			</div>
+			<div class="form-group">
+				<label>Location :</label>
+				<input type="text" name="location" value="{{ user.Location }}" class="form-control" id="Location">
+				<span id="location1" class="text-danger font-weight-bold"></span>
+
+			</div>
+			<div class="form-group">
+				<label>State :</label>
+				<input type="text" name="state" value="{{ user.State }}" class="form-control" id="State">
+			</div>
+			<div class="form-group">
+				<label>Country :</label>
+				<input type="text" name="courntry" value="{{ user.Country }}" class="form-control" id="Country">
+			</div>
+			<div class="form-group">
+				<label>Address :</label>
+				<input type="text" name="address" value="{{ user.Address}} "class="form-control" id="Address">
+			</div>
+
+            <div class="form-group">
+                <input type="file" name="file" value="{{ user.file }}" ><br>
+            </div>
+       {% endfor %}
+
+         <a href="afterlogin.html"><input type="submit" name="submit" value="submit" class="btn btn-success"></a><br>
+        </form>
+        </div><br>
+    </div><br>
+</body>
+</html>

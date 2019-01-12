@@ -1,0 +1,23 @@
+<body> 
+<table border="1"> 
+	<tr>
+		<th>pid</th>
+                <th>pname</th> 
+                <th>pcost</th> 
+                <th>pmfd</th> 
+                <th>expd</th>
+	</tr>
+{% for rec in records %} 
+	<tr>
+		<td>{{rec.pid}}</td>
+		<td>{{rec.pname}}</td>
+ 		<td>{{rec.pcost}}</td>
+		<td>{{rec.pmfd}}</td>
+		<td>{{rec.pexpd}}</td>
+ 
+	</tr>
+{% endfor %}
+</table>
+<a href="/modelapp/">click here to insert another product </a>
+</body> 
+

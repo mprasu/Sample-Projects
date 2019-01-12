@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<h1>User Details</h1>
+		<div class="col-lg-8 m-auto d-block">
+		
+				{% for i in qset %}
+                    Location:<label>{{ i.Name }}</label><br>
+                    State:<label>{{ i.State}}</label><br>
+                    Country:<label>{{ i.Country }}</label><br>
+                    Address:<label>{{ i.Address }}</label><br>
+                    <img src="{{ i.file.url }}"/>
+                {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

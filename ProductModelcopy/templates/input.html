@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title>product form</title>
+</head>
+<body>
+<br/>	
+<form action="." method="post">
+    {% csrf_token %}
+    {{ form.as_ul}}
+    <br/><input type="submit" value="Submit" />
+</form>
+</body>
+</html>

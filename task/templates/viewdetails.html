@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% for k in mydb %}
+	<table>
+		<tr>
+			<td>Location</td>
+			<td>{{ k.Location }}</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td>{{ k.Address }}</td>
+		</tr>
+		<tr>
+			<td>State</td>
+			<td>{{ k.State }}</td>
+		</tr>
+		<tr>
+			<td>Image</td>
+			<td> <img src="{{ k.document.url }}"> </td>
+		</tr>
+	</table>
+	{% endfor %}
+	
+</body>
+</html>

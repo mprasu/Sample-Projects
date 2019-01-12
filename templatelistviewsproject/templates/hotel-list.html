@@ -1,0 +1,24 @@
+<html>
+   <body>
+        <h1>HotelDetails</h1><br>
+	<table border="1">
+	<tr>
+		<th>roomnumber</th>
+		<th>roomtype</th>
+		<th>aminity</th>
+		<th>cost</th>
+		<th>booked</th>
+	</tr>
+	{% for recs in hotelrecs %}
+	<tr>
+		<td>{{recs.roomnumber}}</td>
+		<td>{{recs.roomtype}}</td>
+		<td>{{recs.aminity}}</td>
+		<td>{{recs.cost}}</td>
+		<td>{{recs.booked}}</td>
+	</tr>
+	{% endfor %}
+	</table>
+   </body>
+</html>
+

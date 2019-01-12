@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <h1>Search</h1>
+        <div class="col-lg-8 m-auto d-block">
+        <form method="POST" class="form-horizontal" enctype="multipart/form-data" id="contact_form">{% csrf_token %}
+
+    <div class="form-group">
+        <label>City Name: </label>
+                <input type="text" name="cntry" class="form-control" id="search">
+
+        <!-- {% if l %}
+                 <select id="country" name="cntry">
+                     {% for foo in l %}
+                        <option value={{ foo }}>{{ foo }}</option>
+                    {% endfor %}
+                </select>
+        {% endif %}
+ -->    </div><br>
+    <div class="form-group">
+				<label>User name: </label>
+				<input type="text" name="searc" class="form-control" id="search"><br>
+    </div>
+    <input type="submit" name="submit" value="submit" class="btn btn-success"><br><br>
+            
+    <div>
+            {% if match %}
+                {% for match1 in match %}
+                    Name:<label>{{ match1.Name }}</label><br>
+                    Age:<label>{{ match1.Age}}</label><br>
+                    Email id:<label>{{ match1.Email_id }}</label><br>
+                    Phonenumber:<label>{{ match1.Phonenumber }}</label><br>
+                   <img src="{{ match1.file }}">
+                    <a href="http://localhost:8000/details/?query={{match1.Location}},{{ match1.Name }}">more detils</a><br>
+                {% endfor %}
+            {% endif %}
+            {% if msg %}
+            <label>{{ msg}}</label><br>
+            {% endif %}
+        <h3>Search Name wise <a href="contacts">here</a></h3>
+            
+     </div>           
+</form>
+</body>
+</html>

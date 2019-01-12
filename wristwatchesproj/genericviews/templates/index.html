@@ -1,0 +1,13 @@
+{% if product_list %}
+ 
+    <h1>Buy Wrist Watches! </h1>
+<ul>
+    {% for product in product_list %}<!--product_list is replaced by queryset variable -->
+ 
+    <li> <a href="{% url 'detail' product.id %}">{{ product.title }}</a> </li>
+    {% endfor %}
+</ul>
+	{#  In case  no product exists.  #}
+{% else %}
+<h3> No product found.</h3>
+{% endif %}

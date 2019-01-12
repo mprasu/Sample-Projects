@@ -1,0 +1,13 @@
+<html>
+<body>
+{% for rec in records %}
+	<table>
+	<tr>
+	<td>name: {{rec.name}}</td>
+	</tr>
+	<tr>
+	<td><img src="{{rec.model_pic.url}}" width='150' height='100'></td>
+	</tr>
+{% endfor %}
+</body>
+</html>

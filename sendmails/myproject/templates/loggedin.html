@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>welcome page</title>
+		<h1>welcome to:{{username}}</h1>
+	</head>
+
+	<body>
+		<table border = "1">
+		    <tr>
+			<th>subject</th>
+		        <th>message</th>
+		    </tr>
+		    {% for item in emails %}
+		    <tr width="1"> 
+		        <td>{{item.subject}}</td>
+		        <td>{{ item.message}}</td>
+    		    </tr>
+    		    {% endfor %}
+		</table>
+	
+   	</body>
+</html>
+

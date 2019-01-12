@@ -1,0 +1,110 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	#myid{
+		background-color:yellow;
+		margin-top: 10px;
+		float:right;  
+	}
+	#myid1{
+		background-color:pink;
+		margin-top: 10px;
+		float:right;  
+	}
+	.keycolor{
+		color:orange;
+	}
+	#title{
+		color:blue;
+	}
+	.topspacing{
+		padding-top: 40px;
+	}
+	#id3{
+		float: right;
+		background-color: orange;
+	}
+	#id4{
+		float: right;
+		background-color: green;
+
+	}
+	#id5{
+		float: right;
+		font-size: 15px;
+		background-color: yellow;
+	}
+	#id6{
+		float: right;
+		background-color: grey;
+
+	}
+	#id7{
+		float: right;
+		font-size: 15px;
+		background-color: pink;
+	}
+
+
+
+		
+
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	
+
+</head>
+<body>
+	<div class="container">
+		<form class="form-horizontal" action=" " method="POST">
+			{% csrf_token %}
+			<div id="title">
+				<h2><center>Community App logo</center></h2>
+			</div>
+			<div class="keycolor">
+				<h6>{{success_message_key}}</h6>
+			</div>
+
+
+			<div>
+				<div class="col-md-6">
+					<img src="{% static 'images/images.jpg' %}" alt="logo">
+				</div>
+			
+				<div class="col-md-1" id="myid">
+					<a href='signup1'>signup</a>
+				</div>
+				<div class="col-md-1" id="myid1">
+					<a href='login'>login</a>
+				</div><br><br>
+				<div class="col-md-1" id="id3">
+					<a href='mySettings'>Settings</a>
+				</div>
+
+				<div class="col-md-1" id="id4">
+					<a href='location'>Search</a>
+				</div><br><br>
+				<div class="col-md-2" id="id5">
+					<a href='myevents'>BookYourEventDate</a>
+				</div>
+				<div class="col-md-2" id="id6">
+					<a href='massmail'>massmail</a>
+				</div>
+				<div class="col-md-2" id="id7">
+					<a href='twiliosms'>twiliosms</a>
+				</div>
+			
+			
+			
+			</div>
+				
+			
+			
+			
+		</form>
+	</div>
+</body>
+</html>

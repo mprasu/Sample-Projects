@@ -1,0 +1,75 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="col-lg-7 m-auto d-block">
+			<h1>Edit your profile</h1>
+			<form method="POST" class="form-horizontal" enctype="multipart/form-data" >{% csrf_token %}
+				{% for i in fltr%}
+					
+					
+				<div class="form-group">
+					<label>Name :</label>
+					<input type="text" name="a1" value="{{ i.Name }}" class="form-control" onblur='nameValidation(this)'>
+					<div id='textField'></div>
+				</div>
+				<div class="form-group">
+					<label>Age :</label>
+					<input type="text" name="a2" value="{{i.Age}}" class="form-control" onblur='ageValidation(this)'>
+					<div id='ageField'></div>
+				</div>
+				<div class="form-group">
+					<input type="hidden" name="a3" value="{{i.Email_id}}" id="btnid">
+				</div>
+				
+				<div class="form-group">
+					<label>Phonenumber :</label>
+					<input type="number" min="0" step="1" name="a6" value="{{i.Phonenumber}}" class="form-control" id="Phonenumber" onblur="phonenumberValidate()">
+					<div id="PhonenumberId"></div>
+				</div>
+				<div class="form-group">
+					<label>Location :</label>
+					<input type="text" name="a7" value="{{i.Location}}" class="form-control" id="Location" onblur="locationValidate(this)">
+					<div id="LocationId"></div>
+				</div>
+				<div class="form-group">
+					<label>State :</label>
+					<input type="text" name="a8" value="{{i.State}}" class="form-control" id="State" onblur="stateValidate(this)">
+					<div id="stateId"></div>
+				</div>
+				<div class="form-group">
+					<label>Country :</label>
+					<input type="text" name="a9" value="{{i.Country}}" class="form-control" id="Country" onblur="countryValidate(this)">
+					<div id=countryId></div>
+				</div>
+				<div class="form-group">
+					<label>Address :</label>
+					<input type="text" name="a10" value="{{i.Address}}" class="form-control" id="Address" onblur="addressValidate(this)">
+					<div id=addressId></div>
+				</div>
+				<div class="form-group">
+					<input type="file" name="myfile" value="{{i.document}}" id="btnid">
+				</div>
+				
+
+				{% endfor %}
+				<div>
+					<input type="submit" name="submit" value="submit" class="btn btn-success">
+				</div>
+			</form>
+			
+				
+		</div>
+	</div>
+	<script  src={% static 'js/signup.js' %} type="text/javascript">
+	</script>
+	
+
+</body>
+</html>

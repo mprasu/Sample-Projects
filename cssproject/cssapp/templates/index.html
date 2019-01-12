@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block pagecontent %}
+ <section class="footer-contact-area section_padding_100 clearfix" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Form Start-->
+                    <div class="contact_from">
+                        <form action="create" method="POST">
+                            {% csrf_token %}
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="firstname" id="name" placeholder="First Name" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="lastname" id="name" placeholder="Last Name" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="mailid" id="email" placeholder="Your E-mail" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" name="password" id="name" placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+<table class="table table-bordered">
+    <thead class="alert-warning">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+	    <th>mailid</th>
+	    <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for member in members %}
+        <tr>
+            <td>{{ member.firstname }}</td>
+            <td>{{ member.lastname }}</td>
+	    <td>{{member.mailid }}</td>
+            <td><center><a class="btn btn-sm btn-warning" href="edit/{{ member.id }}"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a class="btn btn-sm btn-danger" href="delete/{{ member.id }}"><span class="glyphicon glyphicon-trash"></span> Delete</a></center></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+    </section>
+
+{% endblock %}
